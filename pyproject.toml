@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "labeva"
-version = "2.0.1a"
+version = "2.0.1"
 description = "ETs Laboratory Evaluation Suit"
 authors = ["Erik Thiel <erik.thiel@students.uni-mainz.de>"]
 license = "GPLv3+"
@@ -84,9 +84,10 @@ no_implicit_optional = true
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.1.0"
-update_changelog_on_bump = true
+version_provider = "poetry"
 tag_format = "v$version"
+version_scheme = "pep440"
+update_changelog_on_bump = true
 version_files = [
     "pyproject.toml:version",
     "src/labeva/VERSION.py:__version__"
