@@ -90,7 +90,7 @@ version_scheme = "pep440"
 update_changelog_on_bump = true
 version_files = [
     "pyproject.toml:version",
-    "src/labeva/VERSION.py:__version__"
+    "src/labeva/__version__.py"
 ]
 
 [build-system]
