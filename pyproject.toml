@@ -16,7 +16,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Physics",
 ]
 packages = [
-    { include = "src/labeva" }
+    { from="src", include="labeva" }
 ]
 
 [tool.poetry.dependencies]
