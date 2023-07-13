@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "labeva"
-version = "2.1.0a0.dev1"
+version = "2.1.0a1.dev1"
 description = "ETs Laboratory Evaluation Suit"
 authors = ["Erik Thiel <erik.thiel@students.uni-mainz.de>"]
 license = "GPLv3+"
@@ -18,6 +18,8 @@ classifiers = [
 packages = [
     { from="src", include="labeva" }
 ]
+repository = "https://github.com/et15/labeva"
+documentation = "https://labeva.docs.et15.eu/"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
