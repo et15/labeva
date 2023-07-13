@@ -1,1 +1,0 @@
-::: labeva.VERSION

@@ -1,6 +1,0 @@
-* [labeva](labeva/index.md)
-    * [VERSION](labeva/VERSION.md)
-    * [fit](labeva/fit.md)
-    * [functions](labeva/functions.md)
-    * [mathfunc](labeva/mathfunc.md)
-    * [plot](labeva/plot.md)
