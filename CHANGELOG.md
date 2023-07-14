@@ -1,3 +1,17 @@
+## v2.1.0a2.dev1 (2023-07-14)
+
+### Fix
+
+- **plot**: fix typo in function signature
+- **labeva**: fix git versioning. files `fit.py` and `plot.py` where known twice (upper and lower case first letter)
+- **project**: fix dependencies
+
+### Refactor
+
+- **project**: fixed imports for mkdocs and put them in a group
+- **project**: requirements changed to: python = ">=3.10,<3.13"
+- **labeva**: some small changes like changing the parameter sequence
+
 ## v2.1.0a1.dev1 (2023-07-13)
 
 ### Fix
