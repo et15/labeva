@@ -26,29 +26,32 @@ python = ">=3.10,<3.13"
 numpy = ">=1.24.3"
 matplotlib = ">=3.7.1"
 scipy = ">=1.10.1"
-mkdocs-literate-nav = "^0.6.0"
-mkdocs-section-index = "^0.3.5"
 
 [tool.poetry.group.dev.dependencies]
 taskipy = ">=1.10.2"
+pre-commit = ">=3.3.3"
+pre-commit-hooks = ">=4.3.0"
 black = ">=22.10.0"
 coverage = ">=6.5.0"
+autoflake = ">=2.0.0"
 flake8-bugbear = ">=22.10.27"
 isort = ">=5.10.1"
 mypy = ">=0.990"
 pep8-naming = ">=0.13.2"
-pre-commit = ">=3.3.3"
-pre-commit-hooks = ">=4.3.0"
 pytest = ">=7.2.0"
 commitizen = ">=2.29.5"
+
+[tool.poetry.group.docs.dependencies]
 mkdocs-gen-files = ">=0.4.0"
 mkdocs-material = ">=8.3.9"
 mkdocstrings = { extras = ["crystal", "python"], version = ">=0.19.0" }
+mkdocs-literate-nav = "^0.6.0"
+mkdocs-section-index = "^0.3.5"
+python-markdown-math = "^0.8"
 pymdown-extensions = ">=9.5"
 Pygments = ">=2.12.0"
 mktestdocs = ">=0.2.0"
-autoflake = ">=2.0.0"
-
+mkdocs = "^1.4.3"
 
 [tool.taskipy.tasks]
 test = { cmd = "pytest src/tests", help = "Runs pytest on the codebase" }
