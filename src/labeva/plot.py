@@ -205,7 +205,7 @@ def args_err(
 
 
 def args_plt(
-    *, ls: str = "dashed", color_str=FIGURE_COLOR, **kwargs: str | int
+    *, ls: str = "dashed", color: str = FIGURE_COLOR, **kwargs: str | int
 ) -> dict[str, str | int]:
     """
     Provides (default) parameters for `plt.plot`. Can be used like
