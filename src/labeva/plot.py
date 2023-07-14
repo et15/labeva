@@ -10,6 +10,7 @@ from os import path
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
+
 # %%
 # === SETTINGS ===
 PLOTTING = True
@@ -171,8 +172,8 @@ def args_err(
     elinewidth: int = 2,
     capsize: int = 5,
     capthick: int = 2,
-    **kwargs,
-):
+    **kwargs: str | int,
+) -> dict[str, str | int]:
     """
     Provides (default) parameters for `plt.errorbar`. Can be used like
     ```python
@@ -203,7 +204,9 @@ def args_err(
     return dct
 
 
-def args_plt(*, ls="dashed", color=FIGURE_COLOR, **kwargs):
+def args_plt(
+    *, ls: str = "dashed", color_str=FIGURE_COLOR, **kwargs: str | int
+) -> dict[str, str | int]:
     """
     Provides (default) parameters for `plt.plot`. Can be used like
     ```python
