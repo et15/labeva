@@ -10,12 +10,12 @@ repo_url: https://github.com/et15/labeva
 # Copyright
 copyright: Copyright &copy; 2023 Erik Thiel
 
-
-social:
-  - icon: fontawesome/brands/github
-    link: https://github.com/et15/labeva
-  - icon: fontawesome/brands/python
-    link: https://pypi.org/project/labeva/
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/et15/labeva
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/labeva/
 
 plugins:
   - search
