@@ -13,9 +13,6 @@ def lin(x, m, b):
         x: x
         m: slope
         b: y-offset
-
-    Returns:
-        y
     """
     return m * x + b
 
@@ -29,9 +26,6 @@ def quad(x, a, x0, y0):
         a: stretching factor
         x0: x-offset
         y0: y-offset
-
-    Returns:
-        y
     """
     return a * (x - x0) ** 2 + y0
 
@@ -39,14 +33,11 @@ def quad(x, a, x0, y0):
 def polynom(x, *args):
     """
     Polynomial function with arbitrary order
-    \\[ y = a_0 x + a_1 x + a_2 x + \\dots \\]
+    \\( y = a_0 x + a_1 x + a_2 x + \\dots \\)
     
     Args:
         x: x
         *args: \\(a_i\\)
-
-    Returns:
-        y
     """
     return sum([args[i] * x**i for i in range(len(args))])
 
@@ -54,16 +45,13 @@ def polynom(x, *args):
 def exp(x, k, a, b):
     """
     Exponential function
-    \\[ y = a \\times \\exp(k \\times x) + b \\]
+    \\( y = a \\times \\exp(k \\times x) + b \\)
     
     Args:
         x: x
         k: grow rate
         a: Start value
         b: y-offset
-
-    Returns:
-        y
     """
     return a * np.exp(k * x) + b
 
@@ -71,16 +59,13 @@ def exp(x, k, a, b):
 def exp_decay(t, tau, a, b):
     """
     Exponential function
-    \\[ y = a \\times \\exp(\\tau \\times t) + b \\]
+    \\( y = a \\times \\exp(\\tau \\times t) + b \\)
     
     Args:
         t: t
         tau: decay time
         a: Start value
         b: y-offset
-
-    Returns:
-        y
     """
     return a * np.exp(-t / tau) + b
 
@@ -88,7 +73,7 @@ def exp_decay(t, tau, a, b):
 def ln(x, tau, a, b):
     """
     logarithmic function
-    \\[ y = \\tau \\times \\ln\\left\\frac{x - b}{a}\\right) \\]
+    \\( y = \\tau \\times \\ln\\left(\\frac{x - b}{a}\\right) \\)
     inverse of exponential function with \\(\\tau = 1/k_{exp}\\)
     
     Args:
@@ -96,9 +81,6 @@ def ln(x, tau, a, b):
         tau: stretching factor
         a: Start value of exp
         b: y-offset of exp
-
-    Returns:
-        y
     """
     return tau * np.log((x - b) / a)  # tau = 1/k from expfunc
 
@@ -114,9 +96,6 @@ def gauss(x, x0, std, a0, b):
         std: standard derivation \\(\\sigma\\)
         a0: Peak height
         b: y-offset
-
-    Returns:
-        y
     """
     return a0 * np.exp(-((x - x0) ** 2) / (2 * std**2)) + b
 
@@ -129,8 +108,5 @@ def gauss_normalized(x, x0, std):
         x: x
         x0: expected value \\(\\mu\\)
         std: standard derivation \\(\\sigma\\)
-
-    Returns:
-        y
     """
     return gauss(x, x0, std, 1 / (std * np.sqrt(2 * np.pi)), 0)
