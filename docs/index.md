@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Welcome to ETs Laboratory Evaluation Suit
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+![Package version][package version badge]
+![Python version][python version badge]
+[![License: GNU General Public License v3 or later (GPLv3+)][license badge]](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+[license badge]: https://badgen.net/static/license/GPLv3+/blue
+[package version badge]: https://badgen.net/pypi/v/labeva
+[python version badge]: https://badgen.net/pypi/python/labeva

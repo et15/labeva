@@ -1,8 +1,9 @@
 # labeva
 
 <!-- badges-begin -->
-[![License: GNU General Public License v3 or later (GPLv3+)][license badge]][license gplv3]
+![Package version][package version badge]
 ![Python version][python version badge]
+[![License: GNU General Public License v3 or later (GPLv3+)][license badge]][license gplv3]
 
 [![Black codestyle][black badge]][black project]
 [![Conventional commits][conventional badge]][conventional commits]
@@ -17,6 +18,7 @@
 [pre-commit badge]: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
 [pre-commit project]: https://pre-commit.com/
 
+[package version badge]: https://badgen.net/pypi/v/labeva
 [python version badge]: https://badgen.net/pypi/python/labeva
 
 [status badge]: https://badgen.net/badge/status/alpha/red
