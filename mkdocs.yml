@@ -1,4 +1,21 @@
+# Project information
 site_name: labeva
+site_url: https://labeva.docs.et15.eu
+site_author: Erik Thiel
+
+# Repository
+repo_name: et15/labeva
+repo_url: https://github.com/et15/labeva
+
+# Copyright
+copyright: Copyright &copy; 2023 Erik Thiel
+
+
+social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/et15/labeva
+  - icon: fontawesome/brands/python
+    link: https://pypi.org/project/labeva/
 
 plugins:
   - search
@@ -12,11 +29,11 @@ plugins:
       default_handler: python
       handlers:
         python:
-          paths: [src]
+          paths: [ src ]
 
 nav:
-- Home: index.md
-- Code Reference: reference/
+  - Home: index.md
+  - Code Reference: reference/
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -29,8 +46,10 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
+  - abbr
   - attr_list
   - md_in_html
+  - footnotes
   - pymdownx.arithmatex:
       generic: true
 
