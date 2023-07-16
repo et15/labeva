@@ -198,9 +198,11 @@ def args_err(
         Dictionary with parameters
     """
     dct = {}
-    for key, value in locals().values():
+    for key, value in locals().items():
         if value is not None:
             dct[key] = value
+    dct.update(dct["kwargs"])
+    del dct["dct"], dct["kwargs"]
     return dct
 
 
@@ -223,7 +225,9 @@ def args_plt(
         Dictionary with parameters
     """
     dct = {}
-    for key, value in locals().values():
+    for key, value in locals().items():
         if value is not None:
             dct[key] = value
+    dct.update(dct["kwargs"])
+    del dct["dct"], dct["kwargs"]
     return dct
