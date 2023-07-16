@@ -1,3 +1,9 @@
+## v2.1.0a3.dev1 (2023-07-16)
+
+### Fix
+
+- **plot**: fix plot & errorbar argument functions regarding getting arguments from locals()
+
 ## v2.1.0a2.dev1 (2023-07-14)
 
 ### Fix
