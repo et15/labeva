@@ -1,3 +1,9 @@
+## v2.1.0rc0 (2023-11-21)
+
+### Fix
+
+- **project**: add missing dependency lmfit with version >=1.2.0
+
 ## v2.1.0a3.dev1 (2023-07-16)
 
 ### Fix
