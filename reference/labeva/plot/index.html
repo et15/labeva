@@ -929,7 +929,7 @@
 
 
 <h2 id="labeva.plot.FIGURE_SIZE" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">FIGURE_SIZE</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">7</span></code>
+<code class="highlight language-python"><span class="n">FIGURE_SIZE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
@@ -1010,6 +1010,7 @@
 
 
 
+
 <div class="doc doc-object doc-function">
 
 
@@ -1026,6 +1027,8 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">plt</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">xdata</span><span class="p">,</span> <span class="n">ydata</span><span class="p">,</span> <span class="n">xerr</span><span class="o">=</span><span class="n">xerr</span><span class="p">,</span> <span class="n">yerr</span><span class="o">=</span><span class="n">yerr</span><span class="p">,</span> <span class="o">**</span><span class="n">args_err</span><span class="p">())</span>
 </code></pre></div>
 If <code>None</code> is given, no value is set.</p>
+
+
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -1195,6 +1198,8 @@ If <code>None</code> is given, no value is set.</p>
     </tbody>
   </table>
 
+
+
   <p><strong>Returns:</strong></p>
   <table>
     <thead>
@@ -1217,9 +1222,9 @@ If <code>None</code> is given, no value is set.</p>
     </tbody>
   </table>
 
-      <details class="quote">
-        <summary>Source code in <code>src/labeva/plot.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-163">163</a></span>
+          <details class="quote">
+            <summary>Source code in <code>src/labeva/plot.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-163">163</a></span>
 <span class="normal"><a href="#__codelineno-0-164">164</a></span>
 <span class="normal"><a href="#__codelineno-0-165">165</a></span>
 <span class="normal"><a href="#__codelineno-0-166">166</a></span>
@@ -1307,10 +1312,11 @@ If <code>None</code> is given, no value is set.</p>
 <a id="__codelineno-0-205" name="__codelineno-0-205"></a>    <span class="k">del</span> <span class="n">dct</span><span class="p">[</span><span class="s2">&quot;dct&quot;</span><span class="p">],</span> <span class="n">dct</span><span class="p">[</span><span class="s2">&quot;kwargs&quot;</span><span class="p">]</span>
 <a id="__codelineno-0-206" name="__codelineno-0-206"></a>    <span class="k">return</span> <span class="n">dct</span>
 </code></pre></div></td></tr></table></div>
-      </details>
+          </details>
   </div>
 
 </div>
+
 
 <div class="doc doc-object doc-function">
 
@@ -1328,6 +1334,8 @@ If <code>None</code> is given, no value is set.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xdata</span><span class="p">,</span> <span class="n">ydata</span><span class="p">,</span> <span class="o">**</span><span class="n">args_plot</span><span class="p">())</span>
 </code></pre></div>
 If <code>None</code> is given, no value is set.</p>
+
+
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -1385,6 +1393,8 @@ If <code>None</code> is given, no value is set.</p>
     </tbody>
   </table>
 
+
+
   <p><strong>Returns:</strong></p>
   <table>
     <thead>
@@ -1407,9 +1417,9 @@ If <code>None</code> is given, no value is set.</p>
     </tbody>
   </table>
 
-      <details class="quote">
-        <summary>Source code in <code>src/labeva/plot.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-209">209</a></span>
+          <details class="quote">
+            <summary>Source code in <code>src/labeva/plot.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-209">209</a></span>
 <span class="normal"><a href="#__codelineno-0-210">210</a></span>
 <span class="normal"><a href="#__codelineno-0-211">211</a></span>
 <span class="normal"><a href="#__codelineno-0-212">212</a></span>
@@ -1459,10 +1469,11 @@ If <code>None</code> is given, no value is set.</p>
 <a id="__codelineno-0-232" name="__codelineno-0-232"></a>    <span class="k">del</span> <span class="n">dct</span><span class="p">[</span><span class="s2">&quot;dct&quot;</span><span class="p">],</span> <span class="n">dct</span><span class="p">[</span><span class="s2">&quot;kwargs&quot;</span><span class="p">]</span>
 <a id="__codelineno-0-233" name="__codelineno-0-233"></a>    <span class="k">return</span> <span class="n">dct</span>
 </code></pre></div></td></tr></table></div>
-      </details>
+          </details>
   </div>
 
 </div>
+
 
 <div class="doc doc-object doc-function">
 
@@ -1477,6 +1488,8 @@ If <code>None</code> is given, no value is set.</p>
   <div class="doc doc-contents ">
   
       <p>saves the current matplotlib figure to a file</p>
+
+
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -1534,9 +1547,9 @@ If <code>None</code> is given, no value is set.</p>
     </tbody>
   </table>
 
-      <details class="quote">
-        <summary>Source code in <code>src/labeva/plot.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-59">59</a></span>
+          <details class="quote">
+            <summary>Source code in <code>src/labeva/plot.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-59">59</a></span>
 <span class="normal"><a href="#__codelineno-0-60">60</a></span>
 <span class="normal"><a href="#__codelineno-0-61">61</a></span>
 <span class="normal"><a href="#__codelineno-0-62">62</a></span>
@@ -1578,10 +1591,11 @@ If <code>None</code> is given, no value is set.</p>
 <a id="__codelineno-0-78" name="__codelineno-0-78"></a>            <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span>
 <a id="__codelineno-0-79" name="__codelineno-0-79"></a>        <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-      </details>
+          </details>
   </div>
 
 </div>
+
 
 <div class="doc doc-object doc-function">
 
@@ -1596,6 +1610,8 @@ If <code>None</code> is given, no value is set.</p>
   <div class="doc doc-contents ">
   
       <p>Sets up default matplotlib settings and changes by the module provided constants</p>
+
+
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -1625,7 +1641,7 @@ If <code>None</code> is given, no value is set.</p>
         <tr>
           <td><code>size</code></td>
           <td>
-                <code>int, int</code>
+                <code>(int, int)</code>
           </td>
           <td>
             <div class="doc-md-description">
@@ -1751,9 +1767,9 @@ If <code>None</code> is given, no value is set.</p>
     </tbody>
   </table>
 
-      <details class="quote">
-        <summary>Source code in <code>src/labeva/plot.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-87"> 87</a></span>
+          <details class="quote">
+            <summary>Source code in <code>src/labeva/plot.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-87"> 87</a></span>
 <span class="normal"><a href="#__codelineno-0-88"> 88</a></span>
 <span class="normal"><a href="#__codelineno-0-89"> 89</a></span>
 <span class="normal"><a href="#__codelineno-0-90"> 90</a></span>
@@ -1895,7 +1911,7 @@ If <code>None</code> is given, no value is set.</p>
 <a id="__codelineno-0-156" name="__codelineno-0-156"></a>    <span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">FIGURE_SIZE</span>
 <a id="__codelineno-0-157" name="__codelineno-0-157"></a>    <span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.dpi&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">FIGURE_DPI</span>
 </code></pre></div></td></tr></table></div>
-      </details>
+          </details>
   </div>
 
 </div>
