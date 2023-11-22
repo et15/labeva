@@ -46,13 +46,13 @@ commitizen = ">=2.29.5"
 mkdocs-gen-files = ">=0.4.0"
 mkdocs-material = ">=8.3.9"
 mkdocstrings = { extras = ["crystal", "python"], version = ">=0.19.0" }
-mkdocs-literate-nav = "^0.6.0"
-mkdocs-section-index = "^0.3.5"
-python-markdown-math = "^0.8"
+mkdocs-literate-nav = ">=0.6.0"
+mkdocs-section-index = ">=0.3.5"
+python-markdown-math = ">=0.8"
 pymdown-extensions = ">=9.5"
 Pygments = ">=2.12.0"
 mktestdocs = ">=0.2.0"
-mkdocs = "^1.4.3"
+mkdocs = ">=1.5.0"
 
 [tool.taskipy.tasks]
 test = { cmd = "pytest src/tests", help = "Runs pytest on the codebase" }
