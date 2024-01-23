@@ -2,32 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://labeva.docs.et15.eu/</loc>
-         <lastmod>2023-11-21</lastmod>
+         <lastmod>2024-01-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://labeva.docs.et15.eu/reference/SUMMARY/</loc>
+         <lastmod>2024-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://labeva.docs.et15.eu/reference/labeva/</loc>
-         <lastmod>2023-11-21</lastmod>
+         <lastmod>2024-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://labeva.docs.et15.eu/reference/labeva/fit/</loc>
-         <lastmod>2023-11-21</lastmod>
+         <lastmod>2024-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://labeva.docs.et15.eu/reference/labeva/func/</loc>
-         <lastmod>2023-11-21</lastmod>
+         <lastmod>2024-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://labeva.docs.et15.eu/reference/labeva/math/</loc>
-         <lastmod>2023-11-21</lastmod>
+         <lastmod>2024-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://labeva.docs.et15.eu/reference/labeva/plot/</loc>
-         <lastmod>2023-11-21</lastmod>
+         <lastmod>2024-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
