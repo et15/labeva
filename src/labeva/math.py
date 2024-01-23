@@ -119,4 +119,6 @@ def error_str(value: float, error: float, frmt: str = "plain", unit: str | None 
         string += f"10^{{{mag_val}}}"
     elif mag_val != 0:
         string += f"e{mag_val}"
+    if unit is not None:
+        string += ' ' + unit
     return string
