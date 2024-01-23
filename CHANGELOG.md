@@ -1,3 +1,13 @@
+## v2.1.0rc1 (2024-01-23)
+
+### Fix
+
+- **math**: fix ´math.error_str()´: `unit` parameter was not returned in sring
+
+### Refactor
+
+- **docs**: update `mk-docs` dependencies
+
 ## v2.1.0rc0 (2023-11-21)
 
 ### Fix
