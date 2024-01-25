@@ -1,3 +1,9 @@
+## v2.1.0 (2024-01-25)
+
+### Feat
+
+- **plot**: remove all parameters which can be set in a style sheet. this should be the preferred method. remove `args_plt()`, no settings left
+
 ## v2.1.0rc1 (2024-01-23)
 
 ### Fix
